@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { PROFILES } from "./data.js";
 import Profile from "./components/Profile.jsx";
 import CreateProfile from "./components/CreateProfile.jsx";
+import Discovery from "./components/Discovery.jsx";
 import { useLocalStorage } from "./useLocalStorage.js";
 
 const getHash = () => window.location.hash.slice(1);
@@ -40,6 +41,7 @@ export default function App() {
         <nav>
           <a href={"#" + all[0].id}>Home</a>
           <a href="#random" onClick={goRandom}>Random Profile</a>
+          <a href="#discovery">Detroit Discovery</a>
           <a href="#create">Create Profile</a>
         </nav>
       </header>
@@ -59,6 +61,8 @@ export default function App() {
 
         {hash === "create" ? (
           <CreateProfile all={all} onCreate={handleCreate} />
+        ) : hash === "discovery" ? (
+          <Discovery all={all} />
         ) : (
           <Profile key={current.id} profile={current} all={all} />
         )}

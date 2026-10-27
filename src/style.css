@@ -63,3 +63,25 @@ footer { text-align:center; font-size:11px; opacity:.7; padding:20px; }
   .top8 { grid-template-columns:repeat(2, 1fr); }
   .p-header { flex-direction:column; align-items:flex-start; }
 }
+
+/* Detroit Discovery prototype */
+.discovery-page h1 { margin-bottom: 8px; }
+.discovery-kicker { font-size: 11px; font-weight: bold; letter-spacing: 1.5px; color: #0a4ea3; margin-bottom: 8px; }
+.discovery-intro { font-size: 14px; line-height: 1.5; max-width: 620px; }
+.discovery-form { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+.discovery-form label, .prompt-fallback label { font-weight: bold; }
+.discovery-form textarea, .prompt-fallback textarea { width: 100%; }
+.discovery-form button, .discovery-ai button { align-self: flex-start; }
+.discovery-note { border: 1px dashed #8a6d1d; background: #fff8dc; padding: 10px; margin: 14px 0; line-height: 1.45; }
+.discovery-results { margin: 16px 0; }
+.discovery-results h2 { color: #0a4ea3; font-size: 18px; }
+.discovery-result { display: flex; align-items: flex-start; gap: 12px; background: #e8f0fb; border: 1px solid #0a4ea3; padding: 10px; margin-bottom: 9px; }
+.discovery-avatar { font-size: 34px; min-width: 46px; text-align: center; }
+.discovery-result h3 { margin: 0 0 4px; font-size: 15px; }
+.discovery-result p { margin: 5px 0; }
+.discovery-result small { color: #444; }
+.discovery-ai { margin-top: 18px; }
+.discovery-ai p { line-height: 1.5; margin-bottom: 10px; }
+.prompt-fallback { margin-top: 12px; display: flex; flex-direction: column; gap: 7px; }
+.discovery-footnote { font-size: 11px; color: #555; line-height: 1.4; }
+@media (max-width:760px) { .discovery-result { gap: 8px; } .discovery-result small { overflow-wrap: anywhere; } }
